@@ -1,0 +1,57 @@
+@base : 2.34376;
+.movie-box {
+  width: 2.485rem * @base;
+  height: 2.335rem * @base;
+  background: url('//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy2/movie.png');
+  background-size: cover;
+  position: absolute;
+  top: 0.5rem * @base;
+  left: 50%;
+  z-index: 1000;
+  transform: translateX(-50%) scale(0);
+  animation: buoyChangeBg 2s steps(9) 1;
+}
+
+@keyframes buoyChangeBg {
+  0% {
+    transform: translateX(-50%) scale(1);
+    background-position-y: 0;
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    background-position-y: 100%;
+  }
+}
+
+.buoy-box {
+  position: absolute;
+  right: .05rem * @base;
+  top: 3.9rem * @base;
+  width: .65rem * @base;
+  height: .65rem * @base;
+  z-index: 1000;
+}
+
+.hotpot {
+  width: 0.63rem * @base;
+  height: 0.64rem * @base;
+  background: url('//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy2/clown_.png');
+  background-size: cover;
+  position: absolute;
+  left: 0.07rem * @base;
+  top: -0.05rem * @base;
+  transform: scale(0);
+  animation: buoyHotpot 1s infinite 2s;
+}
+
+@keyframes buoyHotpot {
+  0% {
+    transform: translateY(-0.03rem * @base) scale(1);
+  }
+  50% {
+    transform: translateY(0.03rem * @base) scale(1);
+  }
+  100% {
+    transform: translateY(-0.03rem * @base) scale(1);
+  }
+}

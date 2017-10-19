@@ -1,0 +1,107 @@
+@base : 2.34376;
+.buoyredpack {
+  position: absolute;
+  top: 4.1rem * @base;
+  right: 0;
+  width: .94rem * @base;
+  height: .35rem * @base;
+  z-index: 100;
+  background: url("//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy3/redpack.png") no-repeat;
+  background-size: cover;
+  animation: img .8s steps(2, end) 2;
+  -webkit-animation: img .8s steps(2, end) 2;
+}
+
+.buoycrabWrap {
+  position: absolute;
+  width: .87rem * @base;
+  height: 0.825rem * @base;
+  z-index: 100;
+  top: 2rem * @base;
+  left: 0;
+  animation: buoycrabWrap 1.5s linear forwards;
+  -webkit-animation: buoycrabWrap 1.5s linear forwards;
+}
+
+.buoycrabWrap .crab {
+  width: .87rem * @base;
+  height: 0.825rem * @base;
+  background: url("//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy3/crap.png") no-repeat;
+  background-size: cover;
+  animation: img2 1s steps(4, end) infinite;
+  -webkit-animation: img2 1s steps(4, end) infinite;
+}
+
+@keyframes buoycrabWrap {
+  0% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(2.3rem * @base, 0);
+  }
+  100% {
+    transform: translate(2.3rem * @base, 1.3rem * @base);
+  }
+}
+
+@-webkit-keyframes buoycrabWrap {
+  0% {
+    transform: translate(0, 0);
+  }
+  80% {
+    transform: translate(2.3rem * @base, 0);
+  }
+  100% {
+    transform: translate(2.3rem * @base, 1.3rem * @base);
+  }
+}
+
+@-webkit-keyframes img {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@keyframes img {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 100%;
+  }
+}
+
+@-webkit-keyframes img2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+@keyframes img2 {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+.coolbuoy {
+  position: absolute;
+  right: .05rem * @base;
+  top: 3.9rem * @base;
+  width: .65rem * @base;
+  height: .65rem * @base;
+  z-index: 200;
+  opacity: 0;
+  animation: img2 1s infinite;
+  -webkit-animation: img2 1s infinite;
+  animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+}
