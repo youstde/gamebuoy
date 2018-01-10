@@ -1,0 +1,1 @@
+window.supportWebp=!0,function(a){a.BuoyMiddle=function(a){var c="http://127.0.0.1:8082/Buoy",n="";n=c+"_"+a.id+".js?v=2017092111";var e=document.createElement("script");e.src=n,document.getElementsByTagName("body")[0].appendChild(e),e.onload=function(){var c=new Baitai.Buoy({clickCallback:function(){a.clickCallback&&a.clickCallback()}});a.ready&&a.ready(c)}}}(window);

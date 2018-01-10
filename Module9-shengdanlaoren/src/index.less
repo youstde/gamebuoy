@@ -1,0 +1,404 @@
+@base: 2.34376;
+.buoy {
+  width: 100%;
+  height: 100%;
+  -webkit-animation: hiddenBg 0.1s 3.3s forwards;
+  animation: hiddenBg 0.1s 3.3s forwards;
+}
+.animate .movie-box {
+  width: 3.2rem * @base;
+  height: 5.15rem * @base;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: buoyShow 3.2s 1;
+  animation: buoyShow 3.2s 1
+}
+
+@-webkit-keyframes buoyShow {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@keyframes buoyShow {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+@-webkit-keyframes hiddenBg {
+  0%, 100% {
+    height: 0;
+    width: 0;
+  }
+}
+
+@keyframes hiddenBg {
+  0%, 100% {
+    height: 0;
+    width: 0;
+  }
+}
+
+.animate .movie-box .christmasImptBf {
+  width: 1.85rem * @base;
+  height: 1.51rem * @base;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -1rem * @base;
+  left: 1.65rem * @base;
+  z-index: 10;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: showChristmasCome .8s 1, showChristmasCome1 steps(3) .8s 1;
+  animation: showChristmasCome .8s 1, showChristmasCome1 steps(3) .8s 1
+}
+
+.animate .movie-box .christmasImptAt, .animate .movie-box .christmasImptRt {
+  width: 2.73rem * @base;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1rem * @base;
+  left: .38rem * @base;
+  z-index: 10
+}
+
+@-webkit-keyframes showChristmasCome {
+  0% {
+    -webkit-transform: translate(0, 0) scale(.8);
+    transform: translate(0, 0) scale(.8)
+  }
+  100% {
+    -webkit-transform: translate(-.75rem * @base, 2rem * @base) scale(1);
+    transform: translate(-.75rem * @base, 2rem * @base) scale(1)
+  }
+}
+
+@keyframes showChristmasCome {
+  0% {
+    -webkit-transform: translate(0, 0) scale(.8);
+    transform: translate(0, 0) scale(.8)
+  }
+  100% {
+    -webkit-transform: translate(-.75rem * @base, 2rem * @base) scale(1);
+    transform: translate(-.75rem * @base, 2rem * @base) scale(1)
+  }
+}
+
+@-webkit-keyframes showChristmasCome1 {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+@keyframes showChristmasCome1 {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+.animate .movie-box .christmasImptRt {
+  height: 2.57rem * @base;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: buoyShow .8s 1 .8s, showRuninto steps(3) .8s 1 .8s;
+  animation: buoyShow .8s 1 .8s, showRuninto steps(3) .8s 1 .8s
+}
+
+@-webkit-keyframes showRuninto {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+@keyframes showRuninto {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+.animate .movie-box .christmasImptAt {
+  height: 2.865rem * @base;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: showChristmastImptAt steps(3) .8s 2 1.6s, showshowChristmastImptAt1 steps(8) 1.6s 1 1.6s;
+  animation: showChristmastImptAt steps(3) .8s 2 1.6s, showshowChristmastImptAt1 steps(8) 1.6s 1 1.6s
+}
+
+.animate .buoy-box .redpack, .animate .movie-box .glassbom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat
+}
+
+@-webkit-keyframes showChristmastImptAt {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+@keyframes showChristmastImptAt {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+@-webkit-keyframes showshowChristmastImptAt1 {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1)
+  }
+  100% {
+    -webkit-transform: translate(0, 4rem * @base) scale(1);
+    transform: translate(0, 4rem * @base) scale(1)
+  }
+}
+
+@keyframes showshowChristmastImptAt1 {
+  0% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1)
+  }
+  100% {
+    -webkit-transform: translate(0, 4rem * @base) scale(1);
+    transform: translate(0, 4rem * @base) scale(1)
+  }
+}
+
+.animate .movie-box .glassbom {
+  width: 3.185rem * @base;
+  height: 4.985rem * @base;
+  background-position-y: 66.7%;
+  z-index: 20;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: showglassbom 1s infinite .8s, showglassbom1 .6s steps(3) 1 .8s;
+  animation: showglassbom 1s infinite .8s, showglassbom1 .6s steps(3) 1 .8s
+}
+
+@-webkit-keyframes showglassbom {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@keyframes showglassbom {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@-webkit-keyframes showglassbom1 {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+@keyframes showglassbom1 {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+.animate .buoy-box .redpack {
+  width: .83rem * @base;
+  height: .655rem * @base;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: showredpack steps(3) .6s infinite 3.2s;
+  animation: showredpack steps(3) .6s infinite 3.2s
+}
+
+.animate .buoy-box .redpack .redpack_tit {
+  width: .48rem * @base;
+  height: .285rem * @base;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: .4rem * @base;
+  left: .25rem * @base;
+  opacity: 1;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotateZ(12deg) scale(0);
+  transform: rotateZ(12deg) scale(0);
+  -webkit-animation: showfortit .8s 1 3.2s, showfortitDown .8s 1 3.2s, showfortitShack linear .8s infinite 4s;
+  animation: showfortit .8s 1 3.2s, showfortitDown .8s 1 3.2s, showfortitShack linear .8s infinite 4s
+}
+
+.buoy-box, .buoy-box .redpack {
+  width: .83rem * @base;
+  height: .655rem * @base;
+  position: absolute
+}
+
+.buoy-box {
+  top: 3.2rem * @base;
+  left: 2.25rem * @base;
+  z-index: 100
+}
+
+.buoy-box .redpack {
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-animation: showredpack steps(3) .6s infinite;
+  animation: showredpack steps(3) .6s infinite
+}
+
+@-webkit-keyframes showredpack {
+  0% {
+    background-position-y: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  100% {
+    background-position-y: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@keyframes showredpack {
+  0% {
+    background-position-y: 0;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  100% {
+    background-position-y: 100%;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+.buoy-box .redpack_tit {
+  width: .48rem * @base;
+  height: .285rem * @base;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: .4rem * @base;
+  left: .25rem * @base;
+  opacity: 1;
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform: rotateZ(12deg) scale(1);
+  transform: rotateZ(12deg) scale(1);
+  -webkit-animation: showfortit .8s 1, showfortitDown .8s 1, showfortitShack linear .8s infinite .8s;
+  animation: showfortit .8s 1, showfortitDown .8s 1, showfortitShack linear .8s infinite .8s
+}
+
+@-webkit-keyframes showfortit {
+  0% {
+    opacity: .4;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@keyframes showfortit {
+  0% {
+    opacity: .4;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@-webkit-keyframes showfortitDown {
+  0% {
+    -webkit-transform: translate(-.25rem * @base, -.1rem * @base) scale(1);
+    transform: translate(-.25rem * @base, -.1rem * @base) scale(1)
+  }
+  100% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1)
+  }
+}
+
+@keyframes showfortitDown {
+  0% {
+    -webkit-transform: translate(-.25rem * @base, -.1rem * @base) scale(1);
+    transform: translate(-.25rem * @base, -.1rem * @base) scale(1)
+  }
+  100% {
+    -webkit-transform: translate(0, 0) scale(1);
+    transform: translate(0, 0) scale(1)
+  }
+}
+
+@-webkit-keyframes showfortitShack {
+  0%, 100%, 50% {
+    -webkit-transform: rotateZ(12deg) scale(1);
+    transform: rotateZ(12deg) scale(1)
+  }
+  25% {
+    -webkit-transform: rotateZ(30deg) scale(1);
+    transform: rotateZ(30deg) scale(1)
+  }
+  75% {
+    -webkit-transform: rotateZ(-10deg) scale(1);
+    transform: rotateZ(-10deg) scale(1)
+  }
+}
+
+@keyframes showfortitShack {
+  0%, 100%, 50% {
+    -webkit-transform: rotateZ(12deg) scale(1);
+    transform: rotateZ(12deg) scale(1)
+  }
+  25% {
+    -webkit-transform: rotateZ(30deg) scale(1);
+    transform: rotateZ(30deg) scale(1)
+  }
+  75% {
+    -webkit-transform: rotateZ(-10deg) scale(1);
+    transform: rotateZ(-10deg) scale(1)
+  }
+}

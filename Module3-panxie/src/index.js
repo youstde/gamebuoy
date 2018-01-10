@@ -6,11 +6,15 @@
     }
 }(function(root){
     var tpl = _include('./index.html');
+    var base = _include('../../base.js');
+    //原型上添加公共方法
+    base(Buoy);
     function Buoy(options){
         this.data = '';
         this.el = '';
         this.options = options;
         this._init();
+        this._imgPreList();
     }
     Buoy.prototype._init = function() {
         var el = document.createElement('div');
@@ -43,6 +47,25 @@
     Buoy.prototype.sendMessage = function(url){
         this.setMessage(url);
     };
-
+    /**
+     * 图片预加载
+     * @private
+     */
+    Buoy.prototype._imgPreList = function() {
+        var imgLists = [
+           {
+                name: 'buoyredpack',
+                type: 'style',
+                canWebp: true,
+                imgUlr: '//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy3/redpack.png'
+            },{
+                name: 'crab',
+                type: 'style',
+                canWebp: true,
+                imgUlr: '//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy3/crap.png'
+            },
+        ];
+        this._setPreImgLoad(imgLists);
+    }
     return Buoy;
 }));

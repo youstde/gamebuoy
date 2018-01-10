@@ -1,0 +1,286 @@
+@base: 2.34376;
+body {
+  background: #000
+}
+
+.animate .movie-box {
+  width: 3.2rem * @base;
+  height: 5.1456rem * @base;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: buoyShow 3s 1;
+  animation: buoyShow 3s 1;
+}
+
+.animate .movie-box .balloon_box {
+  width: 3.2rem * @base;
+  height: 4.39466667rem * @base;
+  z-index: 50;
+  position: absolute;
+  top: 5.1456rem * @base;
+  left: 0;
+  -webkit-animation: showBalloonboxUp linear 3s 1;
+  animation: showBalloonboxUp linear 3s 1;
+}
+
+.animate .movie-box .balloon_box .star1, .animate .movie-box .balloon_box .star2 {
+  left: .2048rem * @base;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.animate .movie-box .balloon_box .star1 {
+  width: 2.55146667rem * @base;
+  height: 4.79146667rem * @base;
+  top: .128rem * @base;
+  -webkit-animation: showstar1 1s infinite;
+  animation: showstar1 1s infinite;
+}
+
+.animate .movie-box .balloon_box .star2 {
+  width: 3.01653333rem * @base;
+  height: 4.6592rem * @base;
+  top: .256rem * @base;
+  -webkit-animation: showstar1 1s infinite .5s;
+  animation: showstar1 1s infinite .5s;
+}
+
+.animate .movie-box .balloon_box .bl1 {
+  width: .64853333rem * @base;
+  height: 1.472rem * @base;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: .1536rem * @base;
+  -webkit-transform-origin: 10% 50%;
+  transform-origin: 10% 50%;
+  -webkit-animation: showBalloon1 linear 1s infinite;
+  animation: showBalloon1 linear 1s infinite;
+}
+
+.animate .movie-box .balloon_box .bl2 {
+  width: .6784rem * @base;
+  height: 1.45493333rem * @base;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 1.70666667rem * @base;
+  left: 1.97973333rem * @base;
+  -webkit-transform-origin: 10% 50%;
+  transform-origin: 10% 50%;
+  -webkit-animation: showBalloon1 linear 1s infinite .5s;
+  animation: showBalloon1 linear 1s infinite .5s;
+}
+
+.animate .movie-box .balloon_box .bl3 {
+  width: .61013333rem * @base;
+  height: 1.64693333rem * @base;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 2.64533333rem * @base;
+  left: .50346667rem * @base;
+  -webkit-transform-origin: 10% 50%;
+  transform-origin: 10% 50%;
+  -webkit-animation: showBalloon1 linear 1s infinite .8s;
+  animation: showBalloon1 linear 1s infinite .8s;
+}
+
+.animate .buoy-box .redpack, .buoy-box .redpack {
+  width: .61013333rem * @base;
+  height: 1.69386667rem * @base;
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.animate .buoy-box .redpack {
+  -webkit-transform-origin: 10% 50%;
+  transform-origin: 10% 50%;
+  -webkit-transform: scale(.9);
+  transform: scale(.9);
+  -webkit-animation: showRedpack linear 2s, showRedpack1 linear 1s infinite 2s;
+  animation: showRedpack linear 2s, showRedpack1 linear 1s infinite 2s
+}
+
+.buoy-box {
+  width: .61013333rem * @base;
+  height: 1.69386667rem * @base;
+  position: absolute;
+  left: 2.51733333rem * @base;
+  top: 2.13333333rem * @base;
+  z-index: 100
+}
+
+.buoy-box .redpack {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-animation: showRedpack1 linear 1s infinite;
+  animation: showRedpack1 linear 1s infinite;
+}
+
+@-webkit-keyframes buoyShow {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@keyframes buoyShow {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes showBalloonboxUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10.2912rem * @base);
+    transform: translateY(-10.2912rem * @base);
+  }
+}
+
+@keyframes showBalloonboxUp {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-10.2912rem * @base);
+    transform: translateY(-10.2912rem * @base);
+  }
+}
+
+@-webkit-keyframes showstar1 {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .2;
+  }
+}
+
+@keyframes showstar1 {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: .2;
+  }
+}
+
+@-webkit-keyframes showBalloon1 {
+  0%, 100% {
+    -webkit-transform: rotateZ(0) translate(0, 0);
+    transform: rotateZ(0) translate(0, 0)
+  }
+  25% {
+    -webkit-transform: rotateZ(-10deg) translate(0, 0);
+    transform: rotateZ(-10deg) translate(0, 0)
+  }
+  50% {
+    -webkit-transform: rotateZ(0) translate(.08533333rem * @base, 0);
+    transform: rotateZ(0) translate(.08533333rem * @base, 0)
+  }
+  75% {
+    -webkit-transform: rotateZ(10deg) translate(0, 0);
+    transform: rotateZ(10deg) translate(0, 0)
+  }
+}
+
+@keyframes showBalloon1 {
+  0%, 100% {
+    -webkit-transform: rotateZ(0) translate(0, 0);
+    transform: rotateZ(0) translate(0, 0)
+  }
+  25% {
+    -webkit-transform: rotateZ(-10deg) translate(0, 0);
+    transform: rotateZ(-10deg) translate(0, 0)
+  }
+  50% {
+    -webkit-transform: rotateZ(0) translate(.08533333rem * @base, 0);
+    transform: rotateZ(0) translate(.08533333rem * @base, 0)
+  }
+  75% {
+    -webkit-transform: rotateZ(10deg) translate(0, 0);
+    transform: rotateZ(10deg) translate(0, 0)
+  }
+}
+
+@-webkit-keyframes showRedpack {
+  0% {
+    -webkit-transform: rotateZ(0) translate(-.64rem * @base, 6.4rem * @base) scale(1);
+    transform: rotateZ(0) translate(-.64rem * @base, 6.4rem * @base) scale(1)
+  }
+  25% {
+    -webkit-transform: rotateZ(-5deg) translate(-.48213333rem * @base, 4.8rem * @base) scale(.98);
+    transform: rotateZ(-5deg) translate(-.48213333rem * @base, 4.8rem * @base) scale(.98)
+  }
+  50% {
+    -webkit-transform: rotateZ(0) translate(-.32rem * @base, 3.2rem * @base) scale(.95);
+    transform: rotateZ(0) translate(-.32rem * @base, 3.2rem * @base) scale(.95)
+  }
+  75% {
+    -webkit-transform: rotateZ(5deg) translate(-.16213333rem * @base, 1.6rem * @base) scale(.92);
+    transform: rotateZ(5deg) translate(-.16213333rem * @base, 1.6rem * @base) scale(.92)
+  }
+  100% {
+    -webkit-transform: rotateZ(0) translate(0, 0) scale(.9);
+    transform: rotateZ(0) translate(0, 0) scale(.9)
+  }
+}
+
+@keyframes showRedpack {
+  0% {
+    -webkit-transform: rotateZ(0) translate(-.64rem * @base, 6.4rem * @base) scale(1);
+    transform: rotateZ(0) translate(-.64rem * @base, 6.4rem * @base) scale(1)
+  }
+  25% {
+    -webkit-transform: rotateZ(-5deg) translate(-.48213333rem * @base, 4.8rem * @base) scale(.98);
+    transform: rotateZ(-5deg) translate(-.48213333rem * @base, 4.8rem * @base) scale(.98)
+  }
+  50% {
+    -webkit-transform: rotateZ(0) translate(-.32rem * @base, 3.2rem * @base) scale(.95);
+    transform: rotateZ(0) translate(-.32rem * @base, 3.2rem * @base) scale(.95)
+  }
+  75% {
+    -webkit-transform: rotateZ(5deg) translate(-.16213333rem * @base, 1.6rem * @base) scale(.92);
+    transform: rotateZ(5deg) translate(-.16213333rem * @base, 1.6rem * @base) scale(.92)
+  }
+  100% {
+    -webkit-transform: rotateZ(0) translate(0, 0) scale(.9);
+    transform: rotateZ(0) translate(0, 0) scale(.9)
+  }
+}
+
+@-webkit-keyframes showRedpack1 {
+  0%, 100% {
+    -webkit-transform: translate(0, 0) scale(.9);
+    transform: translate(0, 0) scale(.9)
+  }
+  50% {
+    -webkit-transform: translate(0, -.08533333rem * @base) scale(.9);
+    transform: translate(0, -.08533333rem * @base) scale(.9)
+  }
+}
+
+@keyframes showRedpack1 {
+  0%, 100% {
+    -webkit-transform: translate(0, 0) scale(.9);
+    transform: translate(0, 0) scale(.9)
+  }
+  50% {
+    -webkit-transform: translate(0, -.08533333rem * @base) scale(.9);
+    transform: translate(0, -.08533333rem * @base) scale(.9)
+  }
+}

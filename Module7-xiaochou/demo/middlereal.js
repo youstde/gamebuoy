@@ -2,7 +2,7 @@
     win.BuoyMiddle = function (options) {
         var baseUrl = '//oss.ltcdn.cc/game/Theme/Buoy/Buoy',
             finallUlr = '';
-        finallUlr = baseUrl + '_' + options.id + '.js?v=2017092111';
+        finallUlr = baseUrl + '_' + options.id + '.js?v=20171016111';
         var scriptObj = document.createElement('script');
         scriptObj.src = finallUlr;
         document.getElementsByTagName("body")[0].appendChild(scriptObj);

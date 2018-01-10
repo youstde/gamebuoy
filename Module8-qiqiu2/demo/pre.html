@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style type="text/css">
+        html,body{
+            padding:0;
+            margin:0;
+            background: #e4e4e4;
+            position: relative;
+            height: 100%;
+        }
+    </style>
+    <script>
+        !function(e,i){var t=e.documentElement,n=navigator.userAgent.match(/iphone|ipod|ipad/gi),a=n?Math.min(i.devicePixelRatio,3):1,m="orientationchange"in window?"orientationchange":"resize";t.dataset.dpr=a;for(var d,l,c=!1,o=e.getElementsByTagName("meta"),r=0;r<o.length;r++)l=o[r],"viewport"==l.name&&(c=!0,d=l);if(c)d.content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no";else{var o=e.createElement("meta");o.name="viewport",o.content="width=device-width,initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0,user-scalable=no",t.firstElementChild.appendChild(o)}var s=function(){var e=t.clientWidth;e/a>640&&(e=640*a),window.remScale=e/640,t.style.fontSize=100*(e/750)+"px";window.FootfontSize=100*(e/750);};s(),e.addEventListener&&i.addEventListener(m,s,!1)}(document,window);
+    </script>
+</head>
+<body>
+    <div class="Buoy-box"></div>
+    _include('../src/index.js?_ac=mini_cdn',{"url":"http://127.0.0.1:8082/;Buoy_8.js"})
+    _include('../../middle.js?_ac=mini_cdn',{"url":"http://127.0.0.1:8082/;middle.js"})
+    <script>
+        (function (win) {
+            win.BuoyMiddle = function (options) {
+                    var prop = new Baitai.Buoy({
+                        body: ".Popup-box",
+                        closeCallback: function (type) {
+                            options.closeCallback && options.closeCallback(type);
+                        }
+                    });
+                    options.ready && options.ready(prop);
+
+            };
+        })(window);
+        window.BuoyMiddle({
+            id: '8',
+            ready: function(Buoy) {
+                Buoy.sendMessage('http://www.baidu.com');
+                Buoy.showBuoy();
+            },
+            clickCallback: function() {
+                console.log(111);
+            }
+        });
+    </script>
+</body>
+</html>

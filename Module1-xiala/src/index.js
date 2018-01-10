@@ -6,11 +6,15 @@
     }
 }(function(root){
     var tpl = _include('./index.html');
+    var base = _include('../../base.js');
+    //原型上添加公共方法
+    base(Buoy);
     function Buoy(options){
         this.data = '';
         this.el = '';
         this.options = options;
         this._init();
+        this._imgPreList();
     }
     Buoy.prototype._init = function() {
         var el = document.createElement('div');
@@ -43,6 +47,35 @@
     Buoy.prototype.sendMessage = function(url){
         this.setMessage(url);
     };
-
+    /**
+     * 图片预加载
+     * @private
+     */
+    Buoy.prototype._imgPreList = function() {
+        var imgLists = [
+            {
+                name: 'rope',
+                type: 'style',
+                canWebp: true,
+                imgUlr: '//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy1/rope.png'
+            },{
+                name: 'person',
+                type: 'style',
+                canWebp: true,
+                imgUlr: '//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy1/person.png'
+            },{
+                name: 'light',
+                type: 'style',
+                canWebp: true,
+                imgUlr: '//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy1/light.png'
+            },{
+                name: 'buoyBg',
+                type: 'style',
+                canWebp: true,
+                imgUlr: '//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy1/box.gif'
+            }
+        ];
+        this._setPreImgLoad(imgLists);
+    }
     return Buoy;
 }));

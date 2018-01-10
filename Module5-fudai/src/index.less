@@ -1,0 +1,629 @@
+@base: 2.34376;
+.movie-box .luckbag, .movie-box .luckbtn {
+  background-size: 100%;
+  background-repeat: no-repeat
+}
+
+.buoy-box, .movie-box {
+  margin-right: -.86186667rem * @base;
+  position: absolute
+}
+
+.buoy-box, .buoy-box .luckbag-cover, .buoy-box .luckbtn, .buoy-box .luckicon, .movie-box, .movie-box .luckbtn, .movie-box .luckicon, .movie-box .moveicon {
+  position: absolute
+}
+
+.movie-box {
+  right: 50%;
+  top: 1.87733333rem * @base;
+  width: 1.72373333rem * @base;
+  height: 1.80906667rem * @base;
+  opacity: 0;
+  z-index: 100;
+  -webkit-transform: scale(0);
+  transform: scale(0)
+}
+
+.movie-box .luckbag {
+  width: 100%;
+  height: 100%;
+}
+
+.movie-box .luckbtn {
+  left: 50%;
+  width: .85333333rem * @base;
+  margin-left: -.42666667rem * @base;
+  height: .87466667rem * @base;
+  bottom: .27733333rem * @base;
+  z-index: 20;
+}
+
+.movie-box .luckbag-cover {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.72373333rem * @base;
+  height: 1.80906667rem * @base;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+.movie-box .luckicon.red1, .movie-box .luckicon.red2, .movie-box .moveicon.red1, .movie-box .moveicon.red2 {
+  width: .34986667rem * @base;
+  height: .45226667rem * @base;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.movie-box .luckicon {
+  top: 0;
+  opacity: 1
+}
+
+.movie-box .moveicon {
+  top: -1.87733333rem * @base;
+  opacity: 0
+}
+
+.movie-box .luckicon.red1, .movie-box .moveicon.red1 {
+  left: .42666667rem * @base;
+  top: -.128rem * @base;
+  z-index: 1
+}
+
+.movie-box .luckicon.red2, .movie-box .moveicon.red2 {
+  left: .64rem * @base;
+  top: -.384rem * @base;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  z-index: 2
+}
+
+.movie-box .luckicon.gift, .movie-box .moveicon.gift {
+  left: .85333333rem * @base;
+  width: .48213333rem * @base;
+  height: .4736rem * @base;
+  top: -.256rem * @base;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 3
+}
+
+.movie-box .luckicon.iphone, .movie-box .moveicon.iphone {
+  left: .93866667rem * @base;
+  width: .448rem * @base;
+  height: .63573333rem * @base;
+  top: -.384rem * @base;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 4
+}
+
+.movie-box .luckicon.gold1, .movie-box .luckicon.gold2, .movie-box .luckicon.gold3, .movie-box .moveicon.gold1, .movie-box .moveicon.gold2, .movie-box .moveicon.gold3 {
+  background-size: 100%;
+  background-repeat: no-repeat
+}
+
+.movie-box .luckicon.gold1, .movie-box .moveicon.gold1 {
+  left: .34133333rem * @base;
+  width: .27306667rem * @base;
+  height: .24746667rem * @base;
+  z-index: 5
+}
+
+.movie-box .luckicon.gold2, .movie-box .moveicon.gold2 {
+  left: .59733333rem * @base;
+  width: .31573333rem * @base;
+  height: .31146667rem * @base;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  z-index: 6
+}
+
+.movie-box .luckicon.gold3, .movie-box .moveicon.gold3 {
+  left: .68266667rem * @base;
+  width: .33706667rem * @base;
+  height: .3072rem * @base;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  z-index: 7
+}
+
+.buoy-box {
+  right: .34133333rem * @base;
+  top: 2.98666667rem * @base;
+  width: 1.72373333rem * @base;
+  height: 1.80906667rem * @base;
+  opacity: 1;
+  -webkit-transform: scale(.3);
+  transform: scale(.3);
+  z-index: 100
+}
+
+.buoy-box .luckbag {
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat
+}
+
+.buoy-box .luckbtn {
+  left: 50%;
+  width: 1.19466667rem * @base;
+  margin-left: -.59733333rem * @base;
+  height: 1.19466667rem * @base;
+  bottom: 0;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 20;
+  -webkit-animation: luckbtnShake 1s infinite;
+  animation: luckbtnShake 1s infinite
+}
+
+.buoy-box .luckbag-cover {
+  left: 0;
+  top: 0;
+  width: 1.72373333rem * @base;
+  height: 1.80906667rem * @base;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 10
+}
+
+.buoy-box .luckicon.red1, .buoy-box .luckicon.red2 {
+  width: .34986667rem * @base;
+  height: .45226667rem * @base;
+  background-size: 100%;
+  background-repeat: no-repeat
+}
+
+.buoy-box .luckicon {
+  top: 0;
+  opacity: 1
+}
+
+.buoy-box .luckicon.red1 {
+  left: .42666667rem * @base;
+  top: -.128rem * @base;
+  z-index: 1
+}
+
+.buoy-box .luckicon.red2 {
+  left: .64rem * @base;
+  top: -.384rem * @base;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  z-index: 2;
+  -webkit-animation: luckShake 1s .3s infinite;
+  animation: luckShake 1s .3s infinite
+}
+
+.buoy-box .luckicon.gift {
+  left: .85333333rem * @base;
+  width: .48213333rem * @base;
+  height: .4736rem * @base;
+  top: -.256rem * @base;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 3
+}
+
+.buoy-box .luckicon.iphone {
+  left: .93866667rem * @base;
+  width: .448rem * @base;
+  height: .63573333rem * @base;
+  top: -.384rem * @base;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  z-index: 4;
+  -webkit-animation: luckShake 1s infinite;
+  animation: luckShake 1s infinite
+}
+
+.buoy-box .luckicon.gold1, .buoy-box .luckicon.gold2, .buoy-box .luckicon.gold3 {
+  top: .04266667rem * @base;
+  background-size: 100%;
+  background-repeat: no-repeat
+}
+
+.buoy-box .luckicon.gold1 {
+  left: .42666667rem * @base;
+  width: .27306667rem * @base;
+  height: .24746667rem * @base;
+  z-index: 5
+}
+
+.buoy-box .luckicon.gold2 {
+  left: .59733333rem * @base;
+  width: .31573333rem * @base;
+  height: .31146667rem * @base;
+  -webkit-transform: rotate(-15deg);
+  transform: rotate(-15deg);
+  z-index: 6
+}
+
+.buoy-box .luckicon.gold3 {
+  left: .68266667rem * @base;
+  width: .33706667rem * @base;
+  height: .3072rem * @base;
+  -webkit-transform: rotate(15deg);
+  transform: rotate(15deg);
+  z-index: 7
+}
+
+.animate .movie-box {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-animation: luckbagScale .8s 1.6s 1, luckBagNotMove .3s 2.4s infinite;
+  animation: luckbagScale .8s 1.6s 1, luckBagNotMove .3s 2.4s infinite
+}
+
+.animate .movie-box .luckicon.gold3 {
+  -webkit-animation: luckHide 1s 1;
+  animation: luckHide 1s 1
+}
+
+.animate .movie-box .luckicon.gold2 {
+  -webkit-animation: luckHide 1.1s 1;
+  animation: luckHide 1.1s 1
+}
+
+.animate .movie-box .luckicon.gold1 {
+  -webkit-animation: luckHide 1.2s 1;
+  animation: luckHide 1.2s 1
+}
+
+.animate .movie-box .luckicon.iphone {
+  -webkit-animation: luckHide 1.3s 1, luckShake 1s 1.3s infinite;
+  animation: luckHide 1.3s 1, luckShake 1s 1.3s infinite
+}
+
+.animate .movie-box .luckicon.gift {
+  -webkit-animation: luckHide 1.4s 1;
+  animation: luckHide 1.4s 1
+}
+
+.animate .movie-box .luckicon.red2 {
+  -webkit-animation: luckHide 1.5s 1, luckShake 1s 1.8s infinite;
+  animation: luckHide 1.5s 1, luckShake 1s 1.8s infinite
+}
+
+.animate .movie-box .luckicon.red1 {
+  -webkit-animation: luckHide 1.6s 1;
+  animation: luckHide 1.6s 1
+}
+
+.animate .movie-box .moveicon.gold3 {
+  -webkit-animation: luckDrop1 1s 1, luckHide 1s 1s infinite;
+  animation: luckDrop1 1s 1, luckHide 1s 1s infinite
+}
+
+.animate .movie-box .moveicon.gold2 {
+  -webkit-animation: luckDrop2 1s .1s 1, luckHide 1s 1.1s infinite;
+  animation: luckDrop2 1s .1s 1, luckHide 1s 1.1s infinite
+}
+
+.animate .movie-box .moveicon.gold1 {
+  -webkit-animation: luckDrop3 1s .2s 1, luckHide 1s 1.2s infinite;
+  animation: luckDrop3 1s .2s 1, luckHide 1s 1.2s infinite
+}
+
+.animate .movie-box .moveicon.iphone {
+  -webkit-animation: luckDrop4 1s .3s 1, luckHide 1s 1.3s infinite;
+  animation: luckDrop4 1s .3s 1, luckHide 1s 1.3s infinite
+}
+
+.animate .movie-box .moveicon.gift {
+  -webkit-animation: luckDrop5 1s .4s 1, luckHide 1s 1.4s infinite;
+  animation: luckDrop5 1s .4s 1, luckHide 1s 1.4s infinite
+}
+
+.animate .movie-box .moveicon.red2 {
+  -webkit-animation: luckDrop6 1s .5s 1, luckHide 1s 1.5s infinite;
+  animation: luckDrop6 1s .5s 1, luckHide 1s 1.5s infinite
+}
+
+.animate .movie-box .moveicon.red1 {
+  -webkit-animation: luckDrop7 1s .6s 1, luckHide 1s 1.6s infinite;
+  animation: luckDrop7 1s .6s 1, luckHide 1s 1.6s infinite
+}
+
+.animate .movie-box .luckbtn {
+  -webkit-animation: luckbtnShake 1s infinite;
+  animation: luckbtnShake 1s infinite
+}
+
+.animate .buoy-box {
+  -webkit-animation: luckHide 2.5s 1;
+  animation: luckHide 2.5s 1
+}
+
+@-webkit-keyframes luckShake {
+  0%, 100%, 50% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+  }
+  25%, 75% {
+    -webkit-transform: translate(0, -.05rem * @base);
+    transform: translate(0, -.05rem * @base)
+  }
+}
+
+@keyframes luckShake {
+  0%, 100%, 50% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+  }
+  25%, 75% {
+    -webkit-transform: translate(0, -.05rem * @base);
+    transform: translate(0, -.05rem * @base)
+  }
+}
+
+@-webkit-keyframes luckbagScale {
+  0% {
+    right: 50%;
+    top: 1.87733333rem * @base;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  100% {
+    right: .34133333rem * @base;
+    top: 2.98666667rem * @base;
+    -webkit-transform: scale(.3);
+    transform: scale(.3)
+  }
+}
+
+@keyframes luckbagScale {
+  0% {
+    right: 50%;
+    top: 1.87733333rem * @base;
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+  100% {
+    right: .34133333rem * @base;
+    top: 2.98666667rem * @base;
+    -webkit-transform: scale(.3);
+    transform: scale(.3)
+  }
+}
+
+@-webkit-keyframes luckBagNotMove {
+  0%, 100% {
+    right: .34133333rem * @base;
+    top: 2.98666667rem * @base;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0
+  }
+}
+
+@keyframes luckBagNotMove {
+  0%, 100% {
+    right: .34133333rem * @base;
+    top: 2.98666667rem * @base;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes luckDrop1 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes luckDrop1 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes luckDrop2 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes luckDrop2 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes luckDrop3 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@keyframes luckDrop3 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: 0;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes luckDrop4 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: -.384rem * @base;
+    opacity: 1
+  }
+}
+
+@keyframes luckDrop4 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: -.384rem * @base;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes luckDrop5 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: -.256rem * @base;
+    opacity: 1
+  }
+}
+
+@keyframes luckDrop5 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: -.256rem * @base;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes luckDrop6 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: -.384rem * @base;
+    opacity: 1
+  }
+}
+
+@keyframes luckDrop6 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: -.384rem * @base;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes luckDrop7 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: -.128rem * @base;
+    opacity: 1
+  }
+}
+
+@keyframes luckDrop7 {
+  0% {
+    top: -1.87733333rem * @base;
+    opacity: 1
+  }
+  100% {
+    top: -.128rem * @base;
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes luckHide {
+  0%, 100% {
+    opacity: 0
+  }
+}
+
+@keyframes luckHide {
+  0%, 100% {
+    opacity: 0
+  }
+}
+
+@-webkit-keyframes luckShow {
+  0%, 100% {
+    opacity: 1
+  }
+}
+
+@keyframes luckShow {
+  0%, 100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes luckbtnShake {
+  0%, 50% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+  }
+  25% {
+    -webkit-transform: translate(0, .05rem * @base);
+    transform: translate(0, .05rem * @base)
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg)
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg)
+  }
+}
+
+@keyframes luckbtnShake {
+  0%, 50% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+  }
+  25% {
+    -webkit-transform: translate(0, .05rem * @base);
+    transform: translate(0, .05rem * @base)
+  }
+  75% {
+    -webkit-transform: rotate(-10deg);
+    transform: rotate(-10deg)
+  }
+  100% {
+    -webkit-transform: rotate(10deg);
+    transform: rotate(10deg)
+  }
+}
