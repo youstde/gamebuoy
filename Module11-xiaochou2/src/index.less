@@ -1,0 +1,158 @@
+@base: 2.34376;
+.animate .movie-box {
+  width: 3.2rem * @base;
+  height: 4.39466667rem * @base;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: buoyShow 2s 1;
+  animation: buoyShow 2s 1;
+}
+
+@-webkit-keyframes buoyShow {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+@keyframes buoyShow {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    transform: scale(1)
+  }
+}
+
+.animate .movie-box .clown {
+  background: url(//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy11/11.png) no-repeat center/ 100% 100%;
+  width: 1.856rem * @base;
+  height: 2.21866667rem * @base;
+  position: absolute;
+  top: .32426667rem * @base;
+  left: -1.856rem * @base;
+  -webkit-animation: showboy steps(4) 1s 1, showBoy1 linear 2s 1;
+  animation: showboy steps(4) 1s 1, showBoy1 linear 2s 1
+}
+
+.animate .buoy-box .redpack, .buoy-box .redpack {
+  background: url(//oss.ltcdn.cc/game/Theme/Buoy/Images/Buoy11/redPackage.gif) no-repeat center/100% 100%;
+}
+
+.animate .buoy-box, .animate .buoy-box .redpack, .buoy-box, .buoy-box .redpack {
+  width: .63573333rem * @base;
+  height: .60586667rem * @base;
+  position: absolute
+}
+
+@-webkit-keyframes showboy {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+@keyframes showboy {
+  0% {
+    background-position-y: 0
+  }
+  100% {
+    background-position-y: 100%
+  }
+}
+
+@-webkit-keyframes showBoy1 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+  }
+  5% {
+    -webkit-transform: translate(.29866667rem * @base, -.512rem * @base);
+    transform: translate(.29866667rem * @base, -.512rem * @base)
+  }
+  50% {
+    -webkit-transform: translate(2.176rem * @base, .85333333rem * @base);
+    transform: translate(2.176rem * @base, .85333333rem * @base)
+  }
+  100% {
+    -webkit-transform: translate(4.26666667rem * @base, -.512rem * @base);
+    transform: translate(4.26666667rem * @base, -.512rem * @base)
+  }
+}
+
+@keyframes showBoy1 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0)
+  }
+  5% {
+    -webkit-transform: translate(.29866667rem * @base, -.512rem * @base);
+    transform: translate(.29866667rem * @base, -.512rem * @base)
+  }
+  50% {
+    -webkit-transform: translate(2.176rem * @base, .85333333rem * @base);
+    transform: translate(2.176rem * @base, .85333333rem * @base)
+  }
+  100% {
+    -webkit-transform: translate(4.26666667rem * @base, -.512rem * @base);
+    transform: translate(4.26666667rem * @base, -.512rem * @base)
+  }
+}
+
+.animate .buoy-box {
+  top: 1.024rem * @base;
+  left: 2.47466667rem * @base;
+  z-index: 100
+}
+
+.animate .buoy-box .redpack {
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -webkit-animation: showrp steps(18) .8s infinite 2s;
+  animation: showrp steps(18) .8s infinite 2s
+}
+
+.buoy-box {
+  top: 1.024rem * @base;
+  left: 2.47466667rem * @base;
+  z-index: 100
+}
+
+.buoy-box .redpack {
+  top: 0;
+  left: 0;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-animation: showrp steps(18) .8s infinite;
+  animation: showrp steps(18) .8s infinite
+}
+
+@-webkit-keyframes showrp {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background-position-y: 0
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    background-position-y: 100%
+  }
+}
+
+@keyframes showrp {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

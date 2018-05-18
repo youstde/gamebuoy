@@ -11,7 +11,8 @@
     "dev7":"gulp dev --config Module7-xiaochou",
     "dev8":"gulp dev --config Module8-qiqiu2",
     "dev9":"gulp dev --config Module9-shengdanlaoren",
-    "dev10":"gulp dev --config Module10-test",
+    "dev10":"gulp dev --config Module10-xiala2",
+    "dev11":"gulp dev --config Module11-xiaochou2",
     "prod1":"gulp prod --config Module1-xiala",
     "prod2":"gulp prod --config Module2-lihe",
     "prod3":"gulp prod --config Module3-panxie",
@@ -21,6 +22,8 @@
     "prod7":"gulp prod --config Module7-xiaochou",
     "prod8":"gulp prod --config Module8-qiqiu2",
     "prod9":"gulp prod --config Module9-shengdanlaoren",
+    "prod10":"gulp prod --config Module10-xiala2",
+    "prod11":"gulp prod --config Module11-xiaochou2",
     "prodall":"npm run prod1;npm run prod2;npm run prod3;npm run prod4;npm run prod5;npm run prod6;npm run prod7;npm run prod8;npm run prod9;"
   },
   "devDependencies": {
